@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* resetando as configurações dos browsers */
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +8,62 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*
+
+NÃO CONSEGUIMOS ESPAÇAR A IMAGEM DO MENU INICIAL
+
+*/
+
+
 header{
-    position: fixed;
-    width: 100%;
+    position: fixed; /*para fixar o menu na tela*/
+    width: 100%; /*ocupando 100% da tela*/
     background-color: rgb(19,25,33);
 }
 
 .menu-superior{
-    text-align: center;
-    padding: 30px;
-    
+    text-align: center; /*centralizando os itens do menu da nav*/
+    padding: 30px; /*alterando a altura dos botões*/
 }
 
 nav a {
-    padding: 24px 30px;
-    border: solid 1px #fff;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-size: 17px;
-    margin-inline: 10px;
+    padding: 24px 30px; /*espaçamento dos botões*/
+    border: solid 1px #fff; /*coloração da borda dos botões*/
+    text-decoration: none; /*retirando o sublinhado dos botões*/
+    text-align: center; /*centralizando os textos dentro dos botões*/
+    color: #fff; /*cor das letras dos botões*/
+    font-size: 17px; /*tamanho da fonte dentro do botão*/
+    margin-inline: 10px; /*espaçamento entre os botões*/ 
+}
+
+main {
+    text-align: center; /*centralizando os itens da main*/
+}
+
+.imagem-principal img{
+    width: 70%; /*diminuindo a imagem para ocupar 70%*/
+    padding-bottom: 50px;
+}
+
+#container{
+    display: flex; /*torna os itens responsivos*/
+    justify-content: center; /*espaçamento entre e ao redor dos itens*/
+    flex-direction: column; /* organiza os itens no eixo principal*/
+    align-items: center; /*alinha os itens ao centro*/
+    text-align: center; /*alinha os textos ao centro*/
+}
+.cardBox{
+    display: grid; /* transforma o display em uma grade*/
+    grid-template-columns: repeat(3,1fr); /*divide os itens na grade de 3 em 3*/
+    gap: 10px;/* espaçamento entre os itens dentro da grade*/
+}
+
+.produto img {
+    width: 350px; /*redimensionando as imagens dos itens em 350px de largura*/
 }
