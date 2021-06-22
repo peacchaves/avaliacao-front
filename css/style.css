@@ -38,7 +38,7 @@ body{
 }
 
 nav a {
-    padding: 24px 30px; /*espaçamento dos botões*/
+    padding: 14px 30px; /*espaçamento dos botões*/
     border: solid 1px #fff; /*coloração da borda dos botões*/
     text-decoration: none; /*retirando o sublinhado dos botões*/
     text-align: center; /*centralizando os textos dentro dos botões*/
@@ -92,11 +92,12 @@ h2{
     width: 300px; /*redimensionando as imagens dos itens em 350px de largura*/
 }
 
-.produto { 
+.produto {
+    position: relative;/*posição relativa para deixar botão absoluto*/
     border: solid 1px; /*contorno da caixa de cada produto*/
     border-radius: 15px; /*adicionando arredondamento da borda*/
     background-color: #fff; /*definindo cor de fundo da caixa*/
-    padding-bottom: 10px; /*espaçamento inferior da caixa*/
+    padding-bottom: 65px; /*espaçamento inferior da caixa com ajuste para o botão*/
 }
 
 .produto h3{
@@ -108,6 +109,13 @@ div .descricao{
 
 div .descricao h3{
     font-size: 16px; /*altera o tamanho dos textos que estejam nas tags h3 -> descrição dos produtos*/
+}
+
+.produto a {
+    position: absolute; /*posição absoluta para deixar botões abaixo*/
+    bottom: 1%; /*espaçamento abaixo para o bloco produto*/
+    left: 50%; /*Manter o botão centralizado*/
+    transform: translateX(-50%); /*Ajuste para manter o botão centralizado*/
 }
 
 button {
