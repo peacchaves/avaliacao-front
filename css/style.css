@@ -50,10 +50,10 @@ main {
 }
 
 .imagem-principal img{
-    width: 70%; /*diminuindo a imagem para ocupar 70%*/
+    width: 100%; /*diminuindo a imagem para ocupar 70% -> Pedro: mudei p 100 pq acho q no projeto pede especificamente 100, caso eu esteja errado peço desculpas e pode voltar pro 70 q tava melhor*/
     padding-bottom: 50px;
     position: relative; /*position relative para poder posicionar imagem e distanciar do menu*/
-    margin-top: 120px;  /*distância da imagem pro topo*/  
+    margin-top: 80px;  /*distância da imagem pro topo*/  
 }
 
 #container{
@@ -68,10 +68,16 @@ main {
     display: grid; /* transforma o display em uma grade*/
     grid-template-columns: repeat(3,1fr); /*divide os itens na grade de 3 em 3*/
     gap: 10px;/* espaçamento entre os itens dentro da grade*/
+    margin: 50px; /*espacinho nas borda*/
 }
 
 .produto img {
     width: 350px; /*redimensionando as imagens dos itens em 350px de largura*/
+}
+
+.produto { /*adicionando borda e o arredondado da borda*/
+    border: solid 1px;
+    border-radius: 15px; 
 }
 
 
