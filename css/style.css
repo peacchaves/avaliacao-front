@@ -28,6 +28,10 @@ header{
     z-index: 10;
 }
 
+body{
+    background-color: rgb(92, 155, 236);
+}
+
 .menu-superior{
     text-align: center; /*centralizando os itens do menu da nav*/
     padding: 30px; /*alterando a altura dos botões*/
@@ -52,12 +56,13 @@ nav a:hover {
 
 main {
     text-align: center; /*centralizando os itens da main*/
-    background-color: rgb(92, 155, 236); /*definindo cor de fundo da main*/
+    /*background-color: rgb(92, 155, 236); definindo cor de fundo da main -> Pedro: passei esse trem pro body pq tinha ficado um pedaço branco no fundo*/
+    margin-bottom: 40px;
 }
 
 .imagem-principal img{
     width: 100%; /*diminuindo a imagem para ocupar 70% -> Pedro: mudei p 100 pq acho q no projeto pede especificamente 100, caso eu esteja errado peço desculpas e pode voltar pro 70 q tava melhor*/
-    padding-bottom: 50px;
+    padding-bottom: 15px;
     position: relative; /*position relative para poder posicionar imagem e distanciar do menu*/
     margin-top: 80px;  /*distância da imagem pro topo*/  
 }
@@ -74,7 +79,7 @@ main {
     display: grid; /* transforma o display em uma grade*/
     grid-template-columns: repeat(3,1fr); /*divide os itens na grade de 3 em 3*/
     gap: 10px;/* espaçamento entre os itens dentro da grade*/
-    margin: 50px; /*espacinho nas borda*/
+    margin: 20px; /*espacinho nas borda*/
     background-color: rgb(92, 155, 236); /*cor de fundo do cardBox*/
     padding: 10px; /*espaçamento interno do cardBox*/
 }
